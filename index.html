@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
 </head>
@@ -15,24 +16,22 @@
         </div>
         <div class="nav-items">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </section>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-content">
-            <div class="hero-img">
-                <img src="image.png" alt="My Photo">
-            </div>
             <div class="hero-title">
                 <h1>Hi, I'm Munazza</h1>
             </div>
             <div class="hero-details">
-                <p>I'm a Freelancer</p>
+                <p>A Passionate Freelancer & Developer</p>
             </div>
             <div class="social-media">
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -41,62 +40,75 @@
                 <a href="#"><i class="bi bi-twitter"></i></a>
             </div>
         </div>
+        <div class="hero-img">
+            <img src="image.png" alt="My Photo">
+        </div>
+    </section>
+
+    <section class="scroll">
+        <div class="scroll-up">
+            <a href="#projects">
+            <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
     </section>
     
 
     <!-- Project Section -->
-    <section>
+    <section id="projects" class="my-project">
+        <h2 class="section-title">Projects</h2>
         <div class="project">
             <div class="project-card">
                 <img src="image2.png" alt="Project 1">
                 <div class="project-info">
-                    <h3>Project Title 1</h3>
-                    <p>Brief description of the project.</p>
+                    <h3>E-Commerce Website</h3>
+                    <p>Developed a responsive online store using React and Firebase.</p>
                 </div>
             </div>
             <div class="project-card">
                 <img src="image2.png" alt="Project 2">
                 <div class="project-info">
-                    <h3>Project Title 2</h3>
-                    <p>Brief description of the project.</p>
+                    <h3>Portfolio Website</h3>
+                    <p>A sleek and modern portfolio to showcase my projects and skills.</p>
                 </div>
             </div>
             <div class="project-card">
                 <img src="image2.png" alt="Project 3">
                 <div class="project-info">
-                    <h3>Project Title 3</h3>
-                    <p>Brief description of the project.</p>
+                    <h3>Weather App</h3>
+                    <p>Real-time weather updates with a user-friendly interface.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section>
+    <section id="skills" class="my-skills">
+        <h2 class="section-title">Skills</h2>
         <div class="skills">
             <div class="skill-card">
-                <a href="#"><i class="bi bi-filetype-html"></i></a>
+                <i class="fab fa-html5"></i>
                 <div class="skill-title">
                     <h4>HTML</h4>
                 </div>
             </div>
 
             <div class="skill-card">
-                <a href="#"><i class="bi bi-filetype-css"></i></a>
+                <i class="fab fa-css3-alt"></i>
                 <div class="skill-title">
                     <h4>CSS</h4>
                 </div>
             </div>
 
             <div class="skill-card">
-                <a href="#"><i class="bi bi-filetype-js"></i></a>
+                <i class="fab fa-js"></i>
                 <div class="skill-title">
                     <h4>JavaScript</h4>
                 </div>
             </div>
 
             <div class="skill-card">
-                <a href="#"><i class="bi bi-filetype-python"></i></a>
+                <i class="fa-brands fa-python"></i>
                 <div class="skill-title">
                     <h4>Python</h4>
                 </div>
@@ -105,11 +117,18 @@
     </section>
 
     <!-- Footer Section -->
-    <section>
+    <footer id="contact">
         <div class="foot">
-            <h6>Munazza 2024</h6>
-            <p>Copyright Reserved</p>
+            <h6>Munazza &#169 2024</h6>
+            <div class="soci-media">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
         </div>
-    </section>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
