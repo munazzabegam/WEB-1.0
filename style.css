@@ -1,23 +1,23 @@
 /* General Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Reset margin for all elements */
+    padding: 0; /* Reset padding for all elements */
+    box-sizing: border-box; /* Ensures padding and border are included in element’s total width and height */
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #FBF6E2;
-    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif; /* Set global font */
+    background-color: #FBF6E2; /* Light background color for the page */
+    scroll-behavior: smooth; /* Smooth scroll effect for anchor links */
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove default list styles */
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent element */
 }
 
 section {
@@ -25,96 +25,88 @@ section {
 }
 
 h1, h2, h3, h4, h6 {
-    margin: 0;
+    margin: 0; /* Remove margin from heading tags */
 }
 
 .section-title {
-    padding: 30px 0;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
+    padding: 30px 0; /* Add padding above and below section title */
+    margin-bottom: 20px; /* Space below section title */
+    display: flex; /* Flexbox for centering the title */
+    justify-content: center; /* Center the section title */
     font-size: 42px;
 }
 
 .section-title h2{
-    color: #131842;
-
+    color: #131842; /* Dark color for section title */
 }
 
-/* Header */
+/* Header Styles */
 .header {
-    /* background: linear-gradient(135deg, #E68369, #131842); */
-    background-color: #00000080;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 20px 40px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background-color: #00000080; /* Semi-transparent black background for header */
+    color: white; /* White text in header */
+    display: flex; /* Flexbox for header layout */
+    justify-content: space-between; /* Space out navigation and title */
+    align-items: center; /* Vertically align items */
+    text-align: center; /* Center text */
+    padding: 20px 40px; /* Padding in the header */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow under header */
+    position: sticky; /* Keep header fixed at the top */
+    top: 0; /* Stay at the top */
+    z-index: 1000; /* Ensure header is on top of other content */
 }
 
 .nav-title h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Font size for the navigation title */
 }
 
 .nav-items ul {
-    display: flex;
-    gap: 20px;
+    display: flex; /* Horizontal layout for navigation items */
+    gap: 20px; /* Spacing between items */
 }
 
 .nav-items ul li {
-    color: white;
-    cursor: pointer;
-    font-weight: 600;
-    transition: transform 0.3s ease, color 0.3s ease;
+    color: white; 
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-weight: 600; /* Bold text */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .nav-items ul li:hover {
-    color: #fbcea5;
-    transform: translateY(-3px);
+    color: #fbcea5; /* Change color on hover */
+    transform: translateY(-3px); /* Slight upward movement on hover */
 }
 
-/* Hero Section */
+/* Hero Section Styles */
 .hero {
-    display: flex;
+    display: flex; /* Flexbox for layout */
     justify-content: space-between; /* Space between content and image */
     align-items: center; /* Center items vertically */
-    text-align: left; /* Align text to the left */
-    height: 100vh; /* Full viewport height */
+    text-align: left;
+    height: 100vh; 
     width: 100%; /* Full width */
-    color: white;
-    position: relative;
-    padding: 0 10%; /* Add padding on the sides */
-    box-sizing: border-box;
-    margin-top: -5%;
+    color: white; /* White text color */
+    position: relative; /* Relative positioning for children */
+    padding: 0 10%;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin-top: -5%; /* Slightly move the section upwards */
 }
 
 .hero-img {
-    order: 2;
+    order: 2; /* Image comes after the content */
 }
 
 .hero-img img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 6px solid #131842;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Set width of the image */
+    height: 400px; /* Set height of the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    border: 6px solid #131842; /* Dark border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow around the image */
 }
 
-/* .hero-img img:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    transition: color 0.3s ease, transform 0.3s ease;
-} */
-
 .hero-content {
-    max-width: 50%;
-    order: 1;
+    max-width: 50%; /* Content occupies 50% width */
+    order: 1; /* Content comes before the image */
 }
 
 .hero-title h1 {
@@ -125,88 +117,81 @@ h1, h2, h3, h4, h6 {
 
 .hero-details p {
     font-size: 1.5rem;
-    color: #131842;
-    margin-bottom: 20px;
+    color: #131842; 
+    margin-bottom: 20px; /* Space below the text */
 }
 
 .social-media a {
-    margin: 0 10px;
+    margin: 0 10px; /* Space between social media icons */
     font-size: 2rem;
     color: #131842;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .social-media a:hover {
-    color: #E68369;
-    transform: scale(1.1);
+    color: #E68369; /* Change color on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 .scroll{
-    position: absolute;
-    width: 100%;
-    bottom: 10px;
+    position: absolute; /* Absolute position for the scroll icon */
+    width: 100%; /* Full width */
+    bottom: 10px; /* Positioned at the bottom of the section */
 }
 
-
 .scroll .scroll-up i {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Flexbox for centering the icon */
+    justify-content: center; /* Center the icon */
     font-size: 40px;
     color: #131842;
-    animation: bounce 1.5s infinite; /* Add bounce animation */
+    animation: bounce 1.5s infinite; /* Bounce animation */
     transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .scroll-up i:hover {
-    color: #E68369;
+    color: #E68369; /* Change color on hover */
     animation: none; /* Stop the bounce on hover */
 }
 
 /* Keyframes for bounce animation */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
+        transform: translateY(0); /* Normal position */
     }
     40% {
-        transform: translateY(-10px);
+        transform: translateY(-10px); /* Bounce upwards */
     }
     60% {
-        transform: translateY(-5px);
+        transform: translateY(-5px); /* Partial bounce */
     }
 }
 
-
-
-/* Projects Section */
+/* Projects Section Styles */
 .project {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    display: grid; /* Grid layout for projects */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+    gap: 30px; /* Space between items */
     padding: 40px;
-    border-radius: 20px;
-}
-
-.section-title {
-    color: #131842;
+    border-radius: 20px; /* Rounded corners */
 }
 
 .project-card {
-    border-radius: 15px;
-    overflow: hidden;
+    border-radius: 15px; /* Rounded corners for project cards */
+    overflow: hidden; /* Hide any overflow */
     background: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow around cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px); /* Lift the card on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 .project-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+    width: 100%; /* Full width for images */
+    height: 180px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area of the image */
 }
 
 .project-info {
@@ -218,7 +203,6 @@ h1, h2, h3, h4, h6 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #131842;
-
 }
 
 .project-info p {
@@ -226,48 +210,54 @@ h1, h2, h3, h4, h6 {
     color: #666;
 }
 
-/* Skills Section */
+/* Skills Section Styles */
 .skills {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 30px;
-    padding: 40px;
+    display: grid; /* Grid layout for skills */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 30px; /* Space between skills */
+    padding: 40px; /* Padding around the section */
     color: white;
-    border-radius: 20px;
+    border-radius: 20px; /* Rounded corners */
     text-align: center;
 }
 
 .skill-card {
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 20px; /* Padding inside skill cards */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow around cards */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transition for hover effects */
     background-color: #131842;
 }
 
 .skill-card:hover {
-    transform: translateY(-8px);
-    background-color: #E68369;
-    /* border: solid 4px black; */
+    transform: translateY(-8px); /* Lift the card on hover */
+    background-color: #E68369; /* Change background on hover */
 }
 
 .skill-card i {
-    font-size: 3rem;
-    color: #ffff;
+    font-size: 3rem; 
+    margin-bottom: 15px;
 }
 
-.skill-title h4 {
-    margin-top: 15px;
-    font-size: 1.3rem;
+.skill-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-/* Footer Section */
-.foot {
-    background: #00000080;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+.skill-card p {
+    font-size: 1rem; 
+    color: #ccc; 
 }
+
+/* Footer Styles */
+footer {
+    background-color: #00000080;
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+    font-size: 1rem; 
+}
+
 
 .foot h6 {
     font-size: 1rem;
@@ -292,15 +282,112 @@ h1, h2, h3, h4, h6 {
     transform: scale(1.1);
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Header Section */
     .header {
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .nav-items ul {
+        display: none;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column-reverse; /* Image below text */
+        text-align: center;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center; /* Centers content vertically */
+        align-items: center; /* Centers content horizontally */
+        height: 100vh; /* Full height for vertical centering */
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column; /* Stacks content vertically */
+        justify-content: center; /* Centers vertically */
+        align-items: center; /* Centers horizontally */
+        margin-bottom: 0; /* Removes extra margin */
+    }
+
+    .hero-title, .hero-details, .social-media {
+        width: 100vw;
+        text-align: center; 
     }
 
     .hero-title h1 {
-        font-size: 2.5rem;
+        font-size: 2.0rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-details p {
+        font-size: 1.0rem;
+        margin-bottom: 15px;
+    }
+
+    .hero-img img {
+        width: 250px; 
+        height: 250px;
+        margin-bottom: 20px;
+        margin-top: -80%;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .social-media a {
+        font-size: 1.5rem;
+    }
+
+    /* Scroll Section */
+    .scroll .scroll-up i {
+        font-size: 30px;
+    }
+
+    /* Projects Section */
+
+    .my-project {
+        margin-top: -20%;
+    }
+    .project {
+        padding: 20px;
+    }
+
+    .project-card img {
+        height: 150px;
+    }
+
+    .project-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-info p {
+        font-size: 0.9rem;
+    }
+
+    /* Skills Section */
+
+    .skill-card i {
+        font-size: 2rem;
+    }
+
+    .skill-title h4 {
+        font-size: 1rem;
+    }
+
+    /* Footer Section */
+    .foot {
+        padding: 15px 10px;
+        font-size: 0.9rem;
+    }
+
+    .soci-media a {
+        font-size: 1.2rem;
     }
 }
